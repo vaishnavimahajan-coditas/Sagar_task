@@ -31,17 +31,17 @@ abstract public class Employee {
         pf = base_salary * pf_percentage;
         System.out.println("PF Deducted: "+pf);
     }
-   void calculate_attendance_deducation()
+   void calculate_attendance_deduction()
    {
 //        DailySalary = BaseSalary / 30
 //● AbsentDays = 30 - AttendanceDays
 //● AttendanceDeduction = AbsentDays * DailySalary
 
 
-       daily_salary =  base_salary /30;
+       daily_salary =  (double) base_salary /30;
        absent_days = 30 - attendance_days;
        attendance_deduction = absent_days * daily_salary;
-       System.out.println("Attedance deducation is:" +attendance_deduction);
+       System.out.println("Attendance deduction is: " +attendance_deduction);
 
    }
 
@@ -107,7 +107,7 @@ abstract public class Employee {
    void  display_all_information()
    {
        pf_deduction();
-       calculate_attendance_deducation();
+       calculate_attendance_deduction();
       bonus_calculation(rating);
        tax_calculation();
        calculate_net_salary();

@@ -2,6 +2,7 @@ public class Manager extends  Employee{
 
 //    GrossSalary = BaseSalary + (TeamSize * 1000)
     int team_size;
+
     Manager(int team_size,int base_salary,double attendance_days,int rating )
     {
     super(base_salary,attendance_days,rating);
